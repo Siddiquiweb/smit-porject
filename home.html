@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>History Point Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #127b80;
+      color: #fff;
+      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      animation-name: initial;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+
+    }
+
+    /* .submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+} */
+    ul {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .ul:hover:hover {
+      background-color: red;
+    }
+
+    img {
+      height: 60px;
+      width: 100%;
+      margin-bottom: 0%;
+    }
+
+    h1 {
+      background-color: #127b80;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+    }
+
+    .dropdown {
+      width: 200px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #3f3c3c;
+      border-radius: 4px;
+    }
+
+    /* CSS for the options */
+    .dropdown option {
+      padding: 5px;
+    }
+
+    /* input{
+        width: 100px;
+        color:rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 0%;
+    } */
+    .search-bar {
+      position: relative;
+    }
+
+    .search-bar input[type="text"] {
+      padding-right: 30px;
+      /* Add space for the icon */
+    }
+
+    .search-bar i {
+      position: absolute;
+      top: 100%;
+      align-items: center;
+      transform: translateY(-50%);
+      color: #333;
+      /* Change the color as per your design */
+    }
+
+    img1 {
+      height: opx;
+      right: 10px;
+    }
+
+    /* }
+.picture{
+    text-align: center;
+    margin-top: 100px;
+    height: 300px;
+    width: 199px;
+  }
+  
+  picture {
+    max-width: 100%;
+    height: auto;
+  } */
+    .container {
+      width: 500px;
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    .image {
+      width: 150px;
+      height: 120px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .text {
+      overflow: hidden;
+      /* Ensures the text doesn't overlap the image */
+    }
+
+    .train {
+      width: 500px;
+      border: 0cap solid black;
+      padding: 20px;
+      right: 300px;
+    }
+
+    .image {
+      width: 150px;
+      height: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .text {
+      overflow: hidden;
+      /* Ensures the text doesn't overlap the image */
+    }
+
+    /* Custom CSS styles for the carousel */
+
+    /* Set the height of the carousel */
+    .carousel {
+      height: 400px;
+    }
+
+    /* Customize the appearance of the carousel indicators */
+    .carousel-indicators {
+      bottom: 10px;
+    }
+
+    /* Customize the appearance of the carousel captions */
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: #fff;
+    }
+
+    /* Customize the appearance of the carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+    }
+
+    /* Customize the appearance of the carousel control icons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #fff;
+    }
+
+    .social-links {
+      width: fit-content;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <center>The History Point</center>
+    </h1>
+    <p>
+      <CEnter>Welcome to our history point website!</CEnter>
+    </p>
+    <!-- <center><input type="searchbar" value="searchbar" class="searchbar-button"></center> -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+
+  </header>
+  <nav>
+    <ul>
+      <li><a href="firstpage.html">Home</a></li>
+      <li><a href="culure.html">Culture</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mainpage.html">Events</a></li>
+      <li><a href="img.html">More History</a></li>
+      <li><a href="img.html">EDUCATION</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="firstpage.html">Login</a></li>
+      <li><a href="team.html">Team Memeber</a></li>
+    </ul>
+  </nav>
+  <img src="pngtree-abstract-digital-world-map-global-social-network-image_1343480.jpg" alt="">
+  </div>
+  <main>
+    <h1>World History Encyclopedia</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1
+                 <img src=" coffee-beans.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+                  <img src="cp.jpg" class="d-block w-100" ...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1">
+          <img src="pakistan.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <html>
+
+    <head>
+      <div class="dropdown">
+        <select name="" id="category" onchange="category()" <option value="">Select history</option>
+          <option value="">Pakistan</option>
+          <option value="option2">Amerca</option>
+          <option value="option3">DUBAI</option>
+          <option value="option4"></option>
+        </select>
+      </div>
+      <!-- <div class="picture">
+    <!-- <center><h1>Latest Content</h1></center>
+    <center><button onclick=""><a href="aptech.html">More Details Aptech Pakistan </a></center>
+    </button> -->
+      <!-- <img src="REHMAN.png" alt="aptech"> -->
+      <!-- <div class="container">
+      <img src="airplane.png" alt="Example Image" class="image">
+      <div class="text">
+        <h2>History OF Airplane</h2>
+        <p>history Airplane</p>
+        <button onclick="">
+          <a href="Airplane.html">click here to details</a></button><div class="train">
+            <img src="train.png" alt="Example Image" class="image">
+            <div class="text">
+              <h2>History OF Train</h2>
+              <p>history train</p>
+              <button onclick="">
+                <a href="train.html">click here to details</a></button>
+            </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </head> --> -->
+      <!-- </div>
+    <div"train">
+      <img src="airplane.png" alt="Example Image" class="image">
+      <div class="text">
+        <h2>History OF Airplane</h2>
+        <p>history Airplane</p>
+        <button onclick="">
+          <a href="Airplane.html">click here to details</a></button>
+      </div> class= -->
+      <!-- <footer>
+    <p>&copy; 2023 History Point. All rights reserved.</p>
+  </footer> -->
+      <!-- <div class="card" style="width: 18rem; height: 80px;">
+    <img src="computer.jpg" class="card-img-top" alt="hight:500px">
+    <div class="card-body">
+      <h5 class="card-title">Card title bg
+
+      </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="team.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+      <footer class="animated lightSpeedIn" id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 footer-info">
+                <h3>Marina-Fleet</h3>
+                <p>The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+                  Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and
+                  defensive maritime employment.</p>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="html/aboutus.html">About Us</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="html/contactus.html">contact Us</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="html/sitemap.html">Site Map</a></li>
+                  <li><i class="ion-ios-arrow-right"></i> <a href="html/feedback.html">Feedback</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h4>Contact Us</h4>
+                <p>
+                  APWA Complex, 1st Floor,<br>
+                  Agha Khan 3 Rd, Garden East,<br>
+                  Saddar Town, Karachi<br>
+                  <strong>Phone:</strong> +92 5589 55488 5<br>
+                  <strong>Email:</strong> info@aptechgdn.net<br>
+                </p>
+                <div class="social-links">
+                  <a href="https://twitter.com/asad80400783" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/asad.bandhani.3" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/babupreedy/" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="https://aboutme.google.com/u/0/?referer=gplus" class="google-plus"><i
+                      class="fa fa-google-plus"></i></a>
+                  <a href="https://www.linkedin.com/in/asad-ashraf-73aa38185/" class="linkedin"><i
+                      class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
+                  legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" class="hover-sub" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong>Marina-Fleet</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="http://Marina-Fleet.com.pk/">Marina Fleet</a>
+          </div>
+        </div>
+      </footer>
+      <!-- #footer
+    <!--start-smooth-scrolling-->
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+  </main>
+
+</body>
+
+</html>
